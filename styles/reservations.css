@@ -1,0 +1,31 @@
+reservations {
+  display: flex;
+  flex-direction: column;
+  background-color: #30363f;
+  color: white;
+  padding: 10% 0; }
+  reservations .option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px; }
+    reservations .option input {
+      width: 130px; }
+    reservations .option select {
+      width: 130px; }
+    reservations .option h1 {
+      font-family: 'Bad Script', cursive; }
+    reservations .option button {
+      font-family: 'Bad Script', cursive;
+      font-size: 20px;
+      border-radius: 20px;
+      margin-top: 30px;
+      cursor: pointer; }
+  reservations .option.date span {
+    margin-right: 42px; }
+  reservations .option.time span {
+    margin-right: 48px; }
+  reservations .option.people span {
+    margin-right: 5px; }
+
+/*# sourceMappingURL=reservations.css.map */

@@ -1,0 +1,43 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/app.css">
+<link rel="stylesheet" type="text/css" href="styles/menu.css">
+<link rel="stylesheet" type="text/css" href="styles/gallery.css">
+<link rel="stylesheet" type="text/css" href="styles/reservations.css">
+<link rel="stylesheet" type="text/css" href="styles/contacts.css">
+<link rel="stylesheet" type="text/css" href="styles/bottom.css">
+</head>
+<body ng-app="bor" ng-controller='controller'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6a9RsgmCMeGwfHbpi3NrvPktcdvqBj7Q&callback=initMap""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/directives/menu.js"></script>
+    <script src="scripts/directives/gallery.js"></script>
+    <script src="scripts/directives/reservations.js"></script>
+    <script src="scripts/directives/contacts.js"></script>
+    <script src="scripts/directives/bottom.js"></script>
+    <div class="header">
+        <div ng-repeat="menu in ['Начало', 'За нас', 'Меню', 'Галерия', 'Резервации', 'Контакти']" class="button" ng-click="selectMenu(menu)">
+            <div class="element">{{menu}}</div>
+        </div>
+    </div>
+    <div id="home" class="appear" ng-class="{'hide': hideOthers}" ng-if="others">
+        <div id="label">
+            <h1>Ресторант Бор</h1>
+            <h2>Основан 1959г.</h2>
+        </div>
+    </div>
+    <div id="aboutUs" class="appear" ng-class="{'hide': hideOthers}" ng-if="others">
+        Посетителите могат да се насладят на кулинарни изкушения от
+        българската и европейската кухня. Богата гама качествен алкохол.
+        Подбрана колекция вина. Бира за всеки вкус. Богат избор.
+    </div>
+    <menu id="menu" class="appear" ng-class="{'hide': hideOthers}" ng-if="others"></menu>
+    <gallery class="appear" ng-class="{'hide': hideGallery}" ng-if="gallery"></gallery>
+    <reservations id="reservations" class="appear" ng-class="{'hide': hideOthers}" ng-if="others"></reservations>
+    <contacts id="contacts" class="appear" ng-class="{'hide': hideOthers}" ng-if="others"></contacts>
+    <bottom-bar class="appear" ng-class="{'hide': hideOthers}" ng-if="others"></bottom-bar>
+</body>

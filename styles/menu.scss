@@ -1,0 +1,51 @@
+menu {
+    padding: 0 5%;
+
+    .menu-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        h1 {
+            positons: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-item {
+            width: 400px;
+            margin: 10px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            font-family: 'Andika', sans-serif;
+            font-size: 15px;
+
+            .product {
+                .name {
+                    width: 270px;
+                    font-size: 16.5px;
+                    font-weight: bold;
+                }
+
+                .ingredients {
+                    width: 270px;
+                    word-wrap: break-word;
+                }
+            }
+
+            .price {
+                display: flex;
+                flex-direction: row;
+
+                span:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

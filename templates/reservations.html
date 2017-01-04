@@ -1,0 +1,20 @@
+<div class="option">
+	<h1>Направи своята резервация сега:</h1>
+</div>
+<div class="option date">
+    <span>Дата: </span>
+    <input type="date" ng-model="date" required>
+</div>
+<div class="option time">
+    <span>Час: </span>
+    <input type="time" ng-model="time" required>
+</div>
+<div class="option people">
+    <span>Брой хора: </span>
+    <select ng-value="number">
+        <option ng-repeat="option in persons" value="option.value">{{option.label}}</option>
+    </select>
+</div>
+<div class="option">
+	<button ng-click="reserve()">Резервирай</button>
+</div>

@@ -1,0 +1,32 @@
+.gallery {
+  width: calc(100vw - 40px);
+  height: 100vh;
+  background-color: #30363f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; }
+  .gallery .image {
+    margin-top: 90px;
+    max-height: calc(100% - 90px);
+    max-width: calc(100% - 32px);
+    cursor: pointer; }
+  .gallery span {
+    width: 16px;
+    height: 16px;
+    cursor: pointer; }
+  .gallery .prev {
+    background-image: url("../images/prev.png"); }
+  .gallery .next {
+    background-image: url("../images/next.png"); }
+  .gallery .go-prev, .gallery .go-next {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    cursor: pointer; }
+  .gallery .go-prev {
+    left: 0; }
+  .gallery .go-next {
+    right: 0; }
+
+/*# sourceMappingURL=gallery.css.map */

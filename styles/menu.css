@@ -1,0 +1,34 @@
+menu {
+  padding: 0 5%; }
+  menu .menu-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    menu .menu-group h1 {
+      positons: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center; }
+    menu .menu-group .menu-item {
+      width: 400px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: 'Andika', sans-serif;
+      font-size: 15px; }
+      menu .menu-group .menu-item .product .name {
+        width: 270px;
+        font-size: 16.5px;
+        font-weight: bold; }
+      menu .menu-group .menu-item .product .ingredients {
+        width: 270px;
+        word-wrap: break-word; }
+      menu .menu-group .menu-item .price {
+        display: flex;
+        flex-direction: row; }
+        menu .menu-group .menu-item .price span:first-child {
+          margin-right: 10px; }
+
+/*# sourceMappingURL=menu.css.map */

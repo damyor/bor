@@ -1,0 +1,13 @@
+<div ng-repeat="group in menu" class="menu-group">
+    <h1>{{group.label}}</h1>
+    <div ng-repeat="item in group.items" class="menu-item">
+        <div class="product" />
+            <div class="name">{{item[0]}}</div>
+            <div class="ingredients">{{item[1]}}</div>
+        </div>
+        <div class="price">
+            <span>{{item[2]}}</span>
+            <span>{{item[3]}}</span>
+        </div>
+    </div>
+</div>
